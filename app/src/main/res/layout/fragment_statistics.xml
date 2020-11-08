@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.StatisticsFragment">
 
     <RelativeLayout
@@ -92,15 +93,24 @@
             android:gravity="left"
             android:text="@string/stat_date" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
+
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="457dp"
-            android:layout_marginEnd="25dp"
+            android:layout_marginTop="427dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center_horizontal"
+            android:text="@string/stat_btn"
+            android:textColor="#ffffff"
 
-            android:text="@string/stat_btn" />
+            app:backgroundTint="@android:color/transparent"
+            app:cornerRadius="8dp"
+            app:strokeColor="#ff0000"
+            app:strokeWidth="2dp" />
 
 
     </RelativeLayout>
